@@ -1,0 +1,6 @@
+com\pulsmort\dao\CustomDao.class
+com\pulsmort\restctrler\TransController.class
+com\pulsmort\model\Customer.class
+com\pulsmort\model\FileInfo.class
+com\pulsmort\dao\CustomDaoImpl.class
+com\pulsmort\dbconf\HibernateConfig.class

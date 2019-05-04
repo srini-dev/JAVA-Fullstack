@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <script src="resource/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="resource/js/popper.min.js"></script>
+    
+    <script src="resource/js/bootstrap4.min.js"></script>
+	
+    <link rel="stylesheet" href="resource/css/bootstrap4.min.css">
+    <link rel="stylesheet" href="resource/css/style.css">
+ <!--    <link rel="stylesheet" href="resource/css/mylModal.css"> -->
+    <title>Document</title>
+    <style>
+    	.modal-lg {
+		    max-width: 80%;
+		    background: #234;
+		    box-shaod:2px 2px 2px #fff;
+		}
+		.modal-backdrop {
+		   /* background-color:#7399bd; */
+		   opcity:0.6;
+		}
+		.modal-body,.modal-content{
+           
+            background: #1f3447; 
+            color:#fff;
+           border: none;
+        }
+        .fld{ 
+            border-radius: 0px;
+            height: 25px;
+            font-weight: 800;
+            color: #fff;
+            padding: 0px;
+            background: #4c5c68;
+            border:none;
+        }
+
+        .lbl{
+			color:#848a9b!important;
+			line-height:10px;
+		}
+    </style>
+</head>
+<body ng-app="pulsApp" ng-controller="custmController">
+    <div class="container-fluid pad-0">
+        <div class="col-xl pad-0 ">
+            <!-- nav bar starts -->
+            <nav class="navbar-custom navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Mortgage Master</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item" style="margin-top:6px;">
+                    <a href="#" ng-click="clearAllFld()"  data-toggle="modal" data-target="#myModal" style="margin-right:10px;color:#18fd8b;text-decoration: none;">NEW CUSTOMER</a>
+                     
+                    </li >
+                    
+                   
+                    
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                   		
+                    	<input ng-model="rtnDate" class="form-control mr-sm-2 fld" type="date" format="dd/MM/yyyy"  aria-label="Search">
+                    	<input ng-model="xData" class="form-control mr-sm-2 fld" type="search" placeholder="Search" aria-label="Search">
+                    	<button ng-click="getOnData()" class="btn btn-outline-success my-2 my-sm-0" type="submit" style="margin-left:10px;">ON</button>
+                    	<button ng-click="getOffData()" class="btn btn-outline-success my-2 my-sm-0" type="submit" style="margin-left:10px;">OFF</button>
+                  </form>
+                </div>
+              </nav>
+            <!-- nav bar ends -->
+        </div>
+
+
+
+        <div class="container-fluid  ">
+        <!-- --------------------------------- -->
+          <div ng-if="data_on" ng-include="'links/ondata.html'"></div>
+          <div ng-if="data_off" ng-include="'links/offdata.html'"></div>
+          <div  ng-include="'links/newcustom.html'"></div>
+           <div></div>
+        <!-- ------------------------------ -->
+        </div>
+
+        <footer class="col-xl">
+            <h1></h1>
+        </footer>
+
+
+    </div>
+
+</body>
+<script src="resource/angular/angular.js"></script>
+<script src="resource/js/sweetalert.min.js"></script>
+<script src="resource/angular/app.js"></script>
+<script src="resource/angular/customcontroller.js"></script>
+<script src="resource/angular/customservice.js"></script>
+</html>

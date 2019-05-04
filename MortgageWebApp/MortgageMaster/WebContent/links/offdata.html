@@ -1,0 +1,36 @@
+ <div class="col-xl-  my-head">
+            <div class="row">
+                <div class="col-1 rw-head-of">Image</div>
+                <div class="col-2 rw-head-of">Name</div>
+                <div class="col-2 rw-head-of">GvnDate/Amt</div>
+                 <div class="col-2 rw-head-of">RtnDate</div>
+                <div class="col-2 rw-head-of">Place/Pho</div>
+                <div class="col-2 rw-head-of">Description</div>
+                <div class="col-1 rw-head-of">Action</div>
+            </div>
+            </div>
+            <div class="col-xl- pad-0 my-table">
+            
+            <div class="row pad-0 my-row" ng-repeat="custm in CustomersOff| filter:xData">
+                <div class="col-1 rw" style="text-align: center">
+                    <img src="resource/img/photo.png" alt="" width="70%">{{custm.id}}
+                   
+                </div>
+                <div class="col-2 rw">  
+                					{{custm.cstNm}}
+                					<p>{{custm.cId}}</p></div>
+                <div class="col-2 rw"><p>{{custm.cGvnDt}}</p>
+                					 <p>{{custm.cGvnAmt}} Rs/-</p>
+                					 <p>{{custm.cRtInt}} Rs/ Int</p></div>
+                <div class="col-2 rw"><p>{{custm.cRtnDt}}</p>
+                 					<p>{{custm.cRtnAmt}} Tot Int</p>
+                 					<p>{{custm.ctopay}} Tot Paid</p>	 </div>
+                <div class="col-2 rw"><p>{{custm.cplc}}</p> <p>{{custm.cPho1}}</p> </div>
+                <div class="col-2 rw" style="padding-right:12px;">{{custm.cItm}}</div>
+                <div class="col-1 rw" style="padding-right:12px;">
+                	<button ng-click="addUCustmData(custm,'on')" class="btn btn-outline-danger my-2 my-sm-0" type="submit" style="margin-left:10px;">Re</button>
+                </div>
+            </div>
+            
+            
+        </div>

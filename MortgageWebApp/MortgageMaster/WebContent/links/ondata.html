@@ -1,0 +1,48 @@
+ <div class="col-xl-  my-head">
+            <div class="row">
+                <div class="col-1 rw-head">Image</div>
+                <div class="col-3 rw-head">Name</div>
+                <div class="col-2 rw-head">Date/Amt</div>
+                <div class="col-2 rw-head">Place/Pho</div>
+                <div class="col-2 rw-head">Description</div>
+                <div class="col-2 rw-head">Actions</div>
+            </div>
+            </div>
+            <div class="col-xl- pad-0 my-table">
+            
+            <div class="row pad-0 my-row" ng-repeat="custm in Customers| filter:xData">
+                <div class="col-1 rw" style="text-align: center">
+                    <img src="resource/img/photo.png" alt="" width="70%">{{custm.id}}
+                   
+                </div>
+                <div class="col-3 rw">  
+                					{{custm.cstNm}}
+                					<p>{{custm.cId}}</p></div>
+                <div class="col-2 rw"><p>{{custm.cGvnDt | date: 'dd/MM/yyyy'}}</p>
+                					 <p>{{custm.cGvnAmt}} Rs/-</p>
+                					 <p>{{custm.cRtInt}} Rs/ Int</p></div>
+                <div class="col-2 rw"><p>{{custm.cplc}}</p> <p>{{custm.cPho1}}</p> </div>
+                <div class="col-2 rw">{{custm.cItm}}</div>
+                <div class="col-2 rw">
+                		<button ng-click="getCalc(custm)" class="btn btn-outline-info my-2 my-sm-0" type="submit" style="margin-left:10px;">C</button>
+                		<button ng-click="getEditable(custm,rtnDate)"  data-toggle="modal" data-target="#myModal" class="btn btn-outline-success my-2 my-sm-0" type="submit" style="margin-left:10px;">E</button>
+                		<button ng-click="" class="btn btn-outline-danger my-2 my-sm-0" type="submit" style="margin-left:10px;">X</button>
+                </div>
+            </div>
+        </div>
+        
+         <div class="col-xl-  my-head" style="padding-top:10px;">
+         	
+         	<button ng-click="getList(1,2000)" ng-if="a1" class="btn btn-secondary btn-sm my-2 my-sm-0">1-2000</button>
+         	<button ng-click="getList(2001,4000)" ng-if="a2" class="btn btn-secondary btn-sm my-2 my-sm-0">...4000</button>
+         	<button ng-click="getList(4001,6000)" ng-if="a3" class="btn btn-secondary btn-sm my-2 my-sm-0">...6000</button>
+         	<button ng-click="getList(6001,80000)" ng-if="a4" class="btn btn-secondary btn-sm my-2 my-sm-0">...8000</button>
+         	<button ng-click="getList(8001,10000)" ng-if="a5" class="btn btn-secondary btn-sm my-2 my-sm-0">...10000</button>
+         	<button ng-click="getList(10001,12000)" ng-if="a6" class="btn btn-secondary btn-sm my-2 my-sm-0">...12000</button>
+         	<button ng-click="getList(12001,maxId)" ng-if="a7" class="btn btn-secondary btn-sm my-2 my-sm-0">...{{maxId}}</button>
+         	<button ng-click="getList(14001,16000)" ng-if="a8" class="btn btn-info btn-sm my-2 my-sm-0">..16000</button>
+         	<button ng-click="getList(16001,18000)" ng-if="a9" class="btn btn-info btn-sm my-2 my-sm-0">...18000</button>
+         	<button ng-click="getList(18001,maxId)" ng-if="a10" class="btn btn-info btn-sm my-2 my-sm-0">...{{maxId}}</button>
+         	<button ng-click="getList(20001,22000)" ng-if="a11" class="btn btn-info btn-sm my-2 my-sm-0">...22000</button>
+         	<button ng-click="getList(22001,24000)" ng-if="a12" class="btn btn-info btn-sm my-2 my-sm-0">...24000</button>
+         </div>

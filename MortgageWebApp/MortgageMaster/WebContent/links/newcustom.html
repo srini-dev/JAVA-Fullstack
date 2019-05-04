@@ -1,0 +1,180 @@
+
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content" style="border: none;;">
+      
+        <!-- Modal Header -->
+        <div class="modal-header" style="border: none;;">
+          <h4 class="modal-title">New Customer Details</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body" style="border: none;;">
+    
+
+        	<!-- --------------------------------------------------------------------------------- -->  
+        	<div class="col-12">
+        	<form>
+          	<div class="row">
+          		<div class="col-4">
+          			<div class="form-group">
+					    <label for="exampleInputtext1 lbl">ID</label>
+					    <input ng-model="Customer.id" type="text" class="form-control fld" id="exampleInputtext1" aria-describedby="textHelp" >
+					</div>
+          		</div>
+          		<div class="col-4">
+          			<div class="form-group">
+					    <label for="exampleInputtext1 lbl">Customer Id</label>
+					    <input ng-model="Customer.cId" type="text" class="form-control fld" id="exampleInputtext1" aria-describedby="textHelp" >
+					</div>
+          		</div>
+          		<div class="col-4">
+          			<div class="form-group">
+					    <label for="exampleInputtext1 lbl">Customer Name</label>
+					    <input ng-model="Customer.cstNm" type="text" class="form-control fld" id="exampleInputtext1" aria-describedby="textHelp" >
+					</div>
+          		</div>
+          	</div>
+          	
+          	<div class="row">
+          		<div class="col-5">
+          			<div class="form-group">
+					    <label for="exampleInputtext1 lbl">Address</label>
+					    <input ng-model="Customer.cAdd" type="text" class="form-control fld" id="exampleInputtext1" aria-describedby="textHelp" >
+					</div>
+          		</div>
+          		<div class="col-3">
+          			<div class="form-group">
+					    <label for="exampleInputtext1 lbl">Place</label>
+					    <input ng-model="Customer.cplc" type="text" class="form-control fld" id="exampleInputtext1" aria-describedby="textHelp" >
+					</div>
+          		</div>
+          		<div class="col-2">
+          			<div class="form-group">
+					    <label for="exampleInputtext1 lbl">Phone No1</label>
+					    <input ng-model="Customer.cPho1" type="text" class="form-control fld" id="exampleInputtext1" aria-describedby="textHelp" >
+					</div>
+          		</div>
+          		<div class="col-2">
+          			<div class="form-group">
+					    <label for="exampleInputtext1 lbl">Phone No 2</label>
+					    <input ng-model="Customer.cPho2" type="text" class="form-control fld" id="exampleInputtext1" aria-describedby="textHelp" >
+					</div>
+          		</div>
+          	</div>
+          	
+          	<div class="row">
+          		<div class="col-8">
+          			<div class="form-group">
+					    <label for="exampleInputtext1 lbl">Items Details</label>
+					    <input ng-model="Customer.cItm" type="text" class="form-control fld" id="exampleInputtext1" aria-describedby="textHelp" >
+					</div>
+          		</div>
+          		<div class="col-4">
+          			<div class="form-group">
+					    <label for="exampleInputtext1 lbl">Total Weight</label>
+					    <input ng-model="Customer.cwt" type="text" class="form-control fld" id="exampleInputtext1" aria-describedby="textHelp" >
+					</div>
+          		</div>
+          		
+          	</div>
+          	
+          	
+
+          	<div class="row">
+          		<div class="col-4">
+          			<div class="form-group">
+					    <label for="exampleInputtext1 lbl">Given Date</label>
+					    <input ng-model="Customer.cGvnDt" format="dd/MM/yyyy"  min="2005-01-01" max="2030-12-31" type="date" class="form-control fld" id="exampleInputtext1"  >
+					</div>
+          		</div>
+          		<div class="col-4">
+          			<div class="form-group">
+					    <label for="exampleInputtext1 lbl">Given Amount</label>
+					    <input ng-model="Customer.cGvnAmt" type="text" class="form-control fld" id="exampleInputtext1" aria-describedby="textHelp" >
+					</div>
+          		</div>
+          		<div class="col-4">
+          			<div class="form-group">
+					    <label for="exampleInputtext1 lbl">Rate of Int.</label>
+					    <input ng-model="Customer.cRtInt" type="text" class="form-control fld" id="exampleInputtext1" aria-describedby="textHelp" >
+					</div>
+          		</div>
+          	</div>
+          	
+          	<div class="row">
+          		<div class="col-4">
+          			<div class="form-group">
+					    <label for="exampleInputtext1 lbl">Return Date</label>
+					    <input ng-model="Customer.cRtnDt" format="dd/MM/yyyy" type="date" class="form-control fld" id="exampleInputtext1" aria-describedby="textHelp" >
+					</div>
+          		</div>
+          		<div class="col-4">
+          			<div class="form-group">
+					    <label for="exampleInputtext1 lbl">Total Int.</label>
+					    <input ng-model="Customer.cRtnAmt" type="text" class="form-control fld" id="exampleInputtext1" aria-describedby="textHelp" >
+					</div>
+          		</div>
+          		<div class="col-4">
+          			<div class="form-group">
+					    <label for="exampleInputtext1 lbl">Total Amount to Pay</label>
+					    <input ng-model="Customer.ctopay" type="text" class="form-control fld" id="exampleInputtext1" aria-describedby="textHelp" >
+					</div>
+          		</div>
+          	</div>
+
+          	<div class="row">
+          		<div class="col-4">
+          			<div class="form-group">
+					    <label for="exampleInputtext1 lbl">Vitness Name</label>
+					    <input ng-model="Customer.vtsNm" type="text" class="form-control fld" id="exampleInputtext1" aria-describedby="textHelp" >
+					</div>
+          		</div>
+          		<div class="col-4">
+          			<div class="form-group">
+					    <label for="exampleInputtext1 lbl">Vitness Place</label>
+					    <input ng-model="Customer.vPlac" type="text" class="form-control fld" id="exampleInputtext1" aria-describedby="textHelp" >
+					</div>
+          		</div>
+          		<div class="col-2">
+          			<div class="form-group">
+					    <label for="exampleInputtext1 lbl">Vitness Phone 1</label>
+					    <input ng-model="Customer.vpho1" type="text" class="form-control fld" id="exampleInputtext1" aria-describedby="textHelp" >
+					</div>
+          		</div>
+          		<div class="col-2">
+          			<div class="form-group">
+					    <label for="exampleInputtext1 lbl">Vitness Phone 2</label>
+					    <input ng-model="Customer.vpho2" type="text" class="form-control fld" id="exampleInputtext1" aria-describedby="textHelp" >
+					</div>
+          		</div>
+          		
+          		<div class="col-12">
+          			<div class="form-group">
+					    <a ng-click="addUCustmData(Customer,'off')" href="#" class="btn btn-secondary" >SAVE</a>
+					</div>
+          		</div>
+          	</div>
+          	
+          	</form>
+          	<!-- ------------------------------------------------------------------- -->
+        </div>
+       </div> 	
+          	
+          	
+          
+        </div>
+        
+        <!-- Modal footer -->
+       <!--  <div class="modal-footer" style="border: none;;">
+        data-dismiss="modal"
+          <a ng-click="addUCustmData(Customer)" href="#" class="btn btn-secondary" >CLOSE</a>
+        </div> -->
+        
+      </div>
+   
+
+  

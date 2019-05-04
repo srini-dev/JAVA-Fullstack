@@ -1,0 +1,38 @@
+@CHARSET "ISO-8859-1";
+
+.modal{
+			
+            top:100px;
+            border: none;
+             width:800px!important; 
+           
+        }
+        .modal-header{
+            border-bottom: none;
+        }
+        .modal-content{
+        
+            background: #5f607a!important;
+            color:#fff;
+            border: none;
+        }
+        .modal-body{
+            padding: 50px 0px;
+            padding-top: 2px;
+            background: #5f607a; 
+            
+            color:#fff;
+        }
+        .fields,checkbox {
+            font-size: 16px;;
+        }
+        .x{
+            color: #eaecee;
+        }
+     
+        input[type=checkbox] {
+            transform: scale(1.5);
+        }
+        .pad{
+            padding: 0px;
+        }
